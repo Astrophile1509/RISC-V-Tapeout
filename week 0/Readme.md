@@ -364,9 +364,7 @@ make test
 
 ---
 
-<div align="center">
 
-## 🎉 **Installation Complete!**
 
 ### **Verification Commands**
 
@@ -379,14 +377,7 @@ cd $HOME/OpenLane
 make test
 ```
 
-| Component | Status | Version Check |
-|-----------|--------|---------------|
-| 🐳 **Docker** | ✅ Ready | `docker --version` |
-| 🧰 **OpenLane** | ✅ Ready | `cd OpenLane && make test` |
 
-### 🚀 **Ready for RTL-to-GDSII Flow!**
-
-</div>
 
 ---
 
