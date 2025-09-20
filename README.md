@@ -21,7 +21,7 @@ This repository documents my **weekly** with tasks inside each week.
 
 | Task | Description | Status |
 |------|-------------|---------|
-| [**Task 0**](week 0/Readme.md) | 🛠️ [Tools Installation](week 0/Readme.md) — Installed **Iverilog**, **Yosys**, **gtkWave**, **NGspice**, **Magic VLSI**, **OpenLane** | ✅ Done |
+| [**Task 0**](https://github.com/Astrophile1509/RISC-V-Tapeout/blob/main/week%200/Readme.md) | 🛠️ [Tools Installation](https://github.com/Astrophile1509/RISC-V-Tapeout/blob/main/week%200/Readme.md) — Installed **Iverilog**, **Yosys**, **gtkWave**, **NGspice**, **Magic VLSI**, **OpenLane** | ✅ Done |
 
 
 
