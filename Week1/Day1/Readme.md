@@ -40,7 +40,7 @@ I understood that a **testbench** is a simulation environment that applies vario
 **iverilog** is an open-source simulator for Verilog that I used throughout my lab. Here's the simulation flow I followed:
 
 ```
-My Design (RTL) + My Testbench → iverilog → Executable → VCD file → GTKWave
+RTL Design  + Testbench → iverilog → Executable → VCD file → GTKWave
 ```
 
 I learned that both my design and testbench are provided as input to iverilog, and the simulator produces a `.vcd` file for waveform viewing in GTKWave.
@@ -55,25 +55,25 @@ I successfully simulated a **2-to-1 multiplexer** using iverilog! Here's how I d
 
 ### Step 1: Setting Up My Environment
 ```shell
-# I installed the required tools
+# install the required tools
 sudo apt install iverilog
 sudo apt install gtkwave
 ```
 
 ### Step 2: Running My Simulation
 ```shell
-# I compiled my design and testbench
+# Design and Testbench Compilation
 iverilog good_mux.v tb_good_mux.v
 
-# I ran the simulation
+# Simulation
 ./a.out
 
-# I viewed the waveform in GTKWave
+# Waveform Generation
 gtkwave tb_good_mux.vcd
 ```
 
 ### Simulation Results
-I captured my simulation waveform and saved it as `gtkwave_good_mux_simulation.png`. The waveform clearly showed:
+I captured my simulation waveform and saved it as `my_mux_simulation.png`. The waveform clearly showed:
 - The select signal `sel` toggling every 75 time units
 - Input `i0` toggling every 10 time units  
 - Input `i1` toggling every 55 time units
