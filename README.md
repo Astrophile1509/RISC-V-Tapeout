@@ -24,12 +24,29 @@ This repository documents my **weekly** with tasks inside each week.
 | [**Task 0**](https://github.com/Astrophile1509/RISC-V-Tapeout/tree/main/week%200) | 🛠️ [Tools Installation](https://github.com/Astrophile1509/RISC-V-Tapeout/blob/main/week%200/Readme.md) — Installed **Iverilog**, **Yosys**, **gtkWave**, **NGspice**, **Magic VLSI**, **OpenLane** | ✅ Done |
 
 
-
 ### 🌟 Key Learnings from Week 0
 - Installed and verified **open-source EDA tools** successfully.  
 - Learned about **basic environment setup** for RTL design and synthesis.  
 - Prepared the system for upcoming **RTL → GDSII flow experiments**.
+---
+## 📅 Week 1 — RTL Design & Synthesis
 
+| Task | Description | Status |
+|------|-------------|---------|
+| [**Task 0**](https://github.com/Astrophile1509/RISC-V-Tapeout/tree/main/Week1/Day1)  |  🚀 [RTL Design and Synthesis](https://github.com/Astrophile1509/RISC-V-Tapeout/blob/main/Week1/Day1/Readme) — Designed, Simulated and Optimized Circuits  |   ✅ Done |
+| [**Task 1**](https://github.com/Astrophile1509/RISC-V-Tapeout/tree/main/Week1/Day2)  |  🧪 [Timing Libraries, Flat v/s Hierarchical Synthesis and efficient Flop Coding Styles](https://github.com/Astrophile1509/RISC-V-Tapeout/blob/main/Week1/Day2/Readme) — Understanding the Library and exploring different synthesis styles  |   ✅ Done |
+| [**Task 2**](https://github.com/Astrophile1509/RISC-V-Tapeout/tree/main/Week1/Day3)  |  🌐 [Combinational and Sequential Optimizations](https://github.com/Astrophile1509/RISC-V-Tapeout/blob/main/Week1/Day3/Readme) — Exploring different Optimization techniques for combinational and sequential circuits  |   ✅ Done |
+| [**Task 3**](https://github.com/Astrophile1509/RISC-V-Tapeout/tree/main/Week1/Day4)  |  🔎 [GLS, Blocking v/s Non-Blocking Statements and Simulation Mismatch](https://github.com/Astrophile1509/RISC-V-Tapeout/blob/main/Week1/Day4/Readme) — Understanding Gate level synthesis, Comparing Blocking and Non-Blocking Statements  |   ✅ Done |
+| [**Task 4**](https://github.com/Astrophile1509/RISC-V-Tapeout/tree/main/Week1/Day5)  |  ⚡ [Optimization in Synthesis](https://github.com/Astrophile1509/RISC-V-Tapeout/blob/main/Week1/Day5/Readme) — Exploring if, case and for statements  |   ✅ Done |
+### 🌟 Key Learnings from Week 1
+- Understood the working of Simulator and Synthesizer  
+- Generated Netlist from RTL Design  
+- Explored the components of Library and understood why different flavors of same cell are present
+- Understood the difference between Hierarchial Design and Flat Design
+- Explored various coding styles for flip-flops
+- Understood why Gate Level Simulation is required and what is synthesis-simulation mismatch and why it occurs
+- Explored the hazards of Blocking statements and the advantages of Non-Blocking Statements
+- Understood how to write a good verilog program
 
 ## 🙏 Acknowledgment  
 
@@ -39,8 +56,8 @@ I also acknowledge the support of **RISC-V International**, **India Semiconducto
 
 ## 📈 **Weekly Progress Tracker**
 
-[![Week0](https://img.shields.io/badge/Week%200-Tools%20Setup-success?style=flat-square)](Week0)
-![Week 1](https://img.shields.io/badge/Week%201-Coming%20Soon-lightgrey?style=flat-square)
+[![Week0](https://img.shields.io/badge/Week%200-Tools%20Setup-success?style=flat-square)](https://github.com/Astrophile1509/RISC-V-Tapeout/tree/main/week%200)
+[![Week 1](https://img.shields.io/badge/Week%201-RTL%20Design%20and%20Synthesis-success?style=flat-square)](https://github.com/Astrophile1509/RISC-V-Tapeout/tree/main/Week1)
 ![Week 2](https://img.shields.io/badge/Week%202-Upcoming-lightgrey?style=flat-square)
 
 
