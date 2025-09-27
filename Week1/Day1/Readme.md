@@ -21,13 +21,13 @@ Today, I embarked on my journey into digital design by learning Verilog, open-so
 ## 1. Simulator, Design, and Testbench
 
 ### 🔧 Simulator
-Through my studies, I learned that a **simulator** is a software tool that checks digital circuit functionality by applying test inputs and viewing outputs. This helps me verify my design before hardware implementation.
+A **simulator** is a software tool that checks digital circuit functionality by applying test inputs and viewing outputs. This helps me verify my design before hardware implementation.
 
 ### 🎯 Design
-I discovered that the **design** is my Verilog code describing the intended logic functionality - the **behavioral representation** of the required specification.
+**Design** is a Verilog code describing the intended logic functionality - the **behavioral representation** of the required specification.
 
 ### 🧪 Testbench
-I understood that a **testbench** is a simulation environment that applies various inputs to my design and checks if the outputs are correct.
+**Testbench** is a simulation environment that applies various inputs to my design and checks if the outputs are correct.
 
 <div align="center">
   <img src="https://github.com/Astrophile1509/RISC-V-Tapeout/blob/main/Week1/Day1/Images/testbench.png" alt="Design & Testbench Overview" width="70%">
@@ -37,13 +37,13 @@ I understood that a **testbench** is a simulation environment that applies vario
 
 ## 2. Getting Started with iverilog
 
-**iverilog** is an open-source simulator for Verilog that I used throughout my lab. Here's the simulation flow I followed:
+**iverilog** is an open-source simulator for Verilog that I used throughout this lab. Here's the simulation flow I followed:
 
 ```
 RTL Design  + Testbench → iverilog → Executable → VCD file → GTKWave
 ```
 
-I learned that both my design and testbench are provided as input to iverilog, and the simulator produces a `.vcd` file for waveform viewing in GTKWave.
+Both the design and testbench are provided as input to iverilog, and the simulator produces a `.vcd` file which stands for value change dump format for waveform viewing in GTKWave.
 <div align="center">
   <img src="https://github.com/Astrophile1509/RISC-V-Tapeout/blob/main/Week1/Day1/Images/Simulation.png" alt="iverilog Simulation Flow" width="70%">
 </div>
@@ -51,7 +51,6 @@ I learned that both my design and testbench are provided as input to iverilog, a
 
 ## 3. Simulating a 2-to-1 Multiplexer
 
-I successfully simulated a **2-to-1 multiplexer** using iverilog! Here's how I did it:
 
 ### Step 1: Setting Up My Environment
 ```shell
@@ -85,8 +84,7 @@ I captured my simulation waveform and saved it as `my_mux_simulation.png`. The w
 
 ## 4. Verilog Code Analysis
 
-### The Multiplexer Design I Analyzed (`good_mux.v`)
-I studied this elegant multiplexer implementation:
+### The Multiplexer Design (`good_mux.v`)
 ```verilog
 module good_mux (input i0, input i1, input sel, output reg y);
 always @(*)
@@ -193,41 +191,39 @@ The synthesizer needs guidance to select optimal cell flavors:
 
 ## 7. Synthesis Lab with Yosys
 
-I successfully synthesized my `good_mux` design using Yosys! Here's my step-by-step process:
-
 ### My Yosys Commands
 
-1. **I started Yosys**
+1. **Starting Yosys**
    ```shell
    yosys
    ```
 
-2. **I read the liberty library**
+2. **Read the liberty library**
    ```shell
    read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
    ```
 
-3. **I read my Verilog design**
+3. **Read Verilog design**
    ```shell
    read_verilog good_mux.v
    ```
 
-4. **I synthesized my design**
+4. **Synthesizing design**
    ```shell
    synth -top good_mux
    ```
 
-5. **I performed technology mapping**
+5. **Technology mapping**
    ```shell
    abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
    ```
 
-6. **I visualized my netlist**
+6. **Netlist**
    ```shell
    show
    ```
 
-7. **I wrote my netlist to a file**
+7. **Generate verilog file for the netlist**
    ```shell
    write_verilog -noattr good_mux_netlist.v
    ```
